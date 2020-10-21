@@ -6,6 +6,7 @@
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 13px;
+    overflow-x: hidden;
 }
 header {
     height: 100px;
@@ -57,8 +58,6 @@ header {
     border-bottom:  5px solid #b28756;
     color: #CCC;
 }
-
-
 .banner {
     height: calc(100vh - 100px);
     background-color:#333;
@@ -110,7 +109,7 @@ header {
     border-radius: 20px;
 }
 .banner .sliders-pointers {
-    width: 100vh;
+    width: 100vw;
     height: 20px;
     position: absolute;
     margin-top: -50px;
@@ -126,6 +125,48 @@ header {
     margin-right: 5px;
     cursor: pointer;
 }
-..banner .pointer.active {
+
+
+
+.banner .pointer.active {
     background-color: #b28756;
+}
+
+
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.default .section-title {
+    font-size: 20px;
+}
+.default .section-desc{
+    font-size: 12px;
+    color: #CCC;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.default .section-body {
+    max-width: 1140px;
+    margin: auto;
+    min-height: 100px;
+    background-color: #CCC;
+}
+.default .light {
+    background-color: #f7f7f7;
+}
+.default .light .section-title {
+    color: #000;
+}
+.default.dark {
+    background-color: #000;
+}
+.default.dark .section-title {
+    color:  #FFF;
 }
